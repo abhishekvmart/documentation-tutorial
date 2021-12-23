@@ -3,32 +3,18 @@ Usage
 
 .. _installation:
 
-Installation
+How to use it?
 ------------
 
-To use Lumache, first install it using pip:
-
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+1. Select a campaign master 
+2. Select an existing sub-campaign OR Plan a new sub-campaign
+3. Select an existing filter OR Create a new filter
+4. Select a field name for which you need to filter the data e.g. Zone, Region, Store
+5. Select values for the selected field e.g. Field = "Zone" Then Value = "North", "East"
+6. Click on fetch to get the customer count
+7. Click on save to save the filter
+8. Select communication medium and fill following details
+	SMS: Template Id, Text
+	Whatsapp: Image, Text
+9. Schedule the selected campaign
 
